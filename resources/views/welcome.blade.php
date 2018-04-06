@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Daily Weight</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="css/app.css" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -79,7 +80,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Daily Weight
                 </div>
 
                 <div class="links">
@@ -89,7 +90,25 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <div class="container">
+                    <form id="dailyRecordFrm">
+                        <div class="form-group">
+                            <label for="txbWeight">Weight</label>
+                            <input type="number" class="form-control" id="txbWeight" aria-describedby="weightHelp" placeholder="Enter your weight today">
+                            <small id="weightHelp" class="form-text text-muted">We'll never share your health information with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="txbFeel">What you feel</label>
+                            <textarea type="text" class="form-control"  aria-describedby="feelHelp" id="txbFeel" placeholder="You did a great job!!" rows="3"></textarea>
+                            <small id="feelHelp" class="form-text text-muted">Any word to cheer yourself up.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+
             </div>
         </div>
+        @include('layouts.partials._footer')
     </body>
 </html>
