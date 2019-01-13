@@ -13,3 +13,4 @@
 測試 Project 功能
 測試 Project 功能
 測試 關鍵字 控制  功能
+測試 關鍵字 控制  功能，只能用 fix, fixes
